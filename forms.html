@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="/submit.php">
+      <!-- name input -->
+      <div>
+        <label for="name"> First Name</label>
+        <input id="name" type="text" placeholder="enter name" />
+      </div>
+
+      <div>
+        <label for="name"> Last Name</label>
+        <input id="name" type="text" placeholder="enter name" />
+      </div>
+
+
+      <!-- phone input -->
+      <div>
+        <label for="ph">Phone</label>
+        <input id="ph" type="tel" placeholder="enter Phone" />
+      </div>
+
+      <!-- Email input -->
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="enter email" required />
+      </div>
+
+      <!-- password input -->
+      <div>
+        <label for="password">password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="enter password"
+          required
+        />
+      </div>
+
+      <!-- date time -->
+      <div>
+        <label for="dob">Date of birth</label>
+        <input id="dob" type="date" required />
+      </div>
+
+      <!-- dropdown (select input) for gender -->
+      <div>
+        <label for="gender">gender</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+           <!-- checkboxes -->
+      <form action="">
+        <label for="color">Pereferences:</label><br>
+        <label for="color1">Acrylic Painting</label>
+        <input type="checkbox" id="box1" name="color1" value="box"><br>
+        <label for="color2">Water Color Painting </label>
+        <input type="checkbox" id="box2" name="color2" value="box"><br>
+        <label for="color3">Oil Painting</label>
+        <input type="checkbox" id="box3" name="color13" value="box"><br>
+       
+      </form> 
+      
+      </body>
+      </html>
+      
+      
+
+      <!-- radio buttons for subscription plan -->
+      <div>
+        <p>Subscription Plan</p>
+        <input id="basic" type="radio" name="subscription" value="basic" />
+        <label for="basic">Basic</label>
+
+        <input id="premium" type="radio" name="subscription" value="premium" />
+        <label for="premium">premium</label>
+
+        <input id="vip" type="radio" name="subscription" value="vip" />
+        <label for="vip">vip</label>
+    </div>
+
+        <!-- textarea for comments -->
+         <div>
+            <label for="Bio">Bio</label>
+            <textarea id="Bio" placeholder="Share few lines about yourself" rows="4"></textarea>
+         </div>
+
+         <!-- submit button -->
+          <div>
+            <button type="reset">RESET</button>
+           <button type="submit">SUBMIT</button>
+          </div>
+    </form>
+  </body>
+</html>
